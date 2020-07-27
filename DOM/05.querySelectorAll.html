@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <p class="abc">Lorem Ipsum Dolor</p>
+    <p class="abc">Lorem Ipsum Dolor</p>
+    <p class="abc">Lorem Ipsum Dolor</p>
+    <script>
+        //.querySelectorAll()은 특정 CSS 선택자를 가진 모든 요소를 배열로 가져오는 메서드입니다.
+        //abc인 클래스를 선택하는 jb를 선언
+      var jb = document.querySelectorAll( '.abc' );
+        // jb[1](jb의2번째)의 색상을 빨간색으로 한다.
+      jb[1].style.color = 'red';
+    </script>
+  </body>
+  <body>
+    <p class="def">Lorem Ipsum Dolor</p>
+    <p class="def">Lorem Ipsum Dolor</p>
+    <p class="def">Lorem Ipsum Dolor</p>
+    <p class="def">Lorem Ipsum Dolor</p>
+    <p class="def">Lorem Ipsum Dolor</p>
+    <p class="ghi">Lorem Ipsum Dolor</p>
+    <p class="ghi">Lorem Ipsum Dolor</p>
+    <p class="ghi">Lorem Ipsum Dolor</p>
+    <p>Lorem Ipsum Dolor</p>
+    <script>
+        //def또는 ghi인 클래스를 선택하는 jb를 선언
+      var jb = document.querySelectorAll( '.def, .ghi' );
+        //반복문 i=0이고, jb의 길이가 i보다 클때 i를 1개씩 늘린다....
+      for ( var i = 0; i < jb.length; i++ ) {
+        jb[i].style.color = 'red';
+      }
+    </script>
+  </body>
+</html>
+</html>
+

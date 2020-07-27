@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+		<style>
+			body {
+				font-family: Consolas, monospace;
+			}
+		</style>
+  </head>
+  <body>
+		<ul>
+			<li>Lorem</li>
+			<li>Ipsum <span>Dolor</span></li>
+		</ul>
+		<script>
+            //.childElementCount는 자식 요소의 개수를 반환하는 속성입니다.
+            //바로 아래 단계에 있는 자식 요소의 개수만 세고, 자식 요소의 자식 요소의 수는 세지 않습니다.
+            //jb 선언 = ul의 첫번째 태그를 불러오고, 자식 요소의 개수를 센다..
+            //ul의 자식이므로 li의 갯수 2개를 카운트한다~
+			var jb = document.getElementsByTagName( 'ul' )[0].childElementCount;
+			document.write( "<p>document.getElementsByTagName( 'ul' )[0].childElementCount : " + jb + "</p>" );
+		</script>
+  </body>
+</html>

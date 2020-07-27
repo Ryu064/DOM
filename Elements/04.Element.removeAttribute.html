@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+		<style>
+			body {
+				font-family: Consolas, monospace;
+			}
+			.abc {
+				color: red;
+			}
+		</style>
+  </head>
+  <body>
+		<h1 class="abc">Lorem Ipsum Dolor</h1>
+		<h1 class="abc">Lorem Ipsum Dolor</h1>
+		<script>
+            //문서의 첫번째 h1 요소의 class 속성을 제거한다.
+			document.getElementsByTagName( 'h1' )[0].removeAttribute( 'class' );
+		</script>
+  </body>
+</html>

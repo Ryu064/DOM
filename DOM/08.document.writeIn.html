@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+		<style>
+			body {
+				font-family: Consolas, monospace;
+			}
+		</style>
+  </head>
+  <body>
+		<p><strong>document.write</strong></p>
+		<script>
+            //write로 사용하면 띄어쓰기가 안됨.(2개 이상 사용시)
+			document.write( 'Hello World' );
+			document.write( 'Goodbye World' );
+		</script>
+		<p><strong>document.writeln</strong></p>
+		<script>
+            //writeIn으로 사용하면 writeIn과 writeIn사이가 띄워짐
+			document.writeln( 'Hello World' );
+			document.writeln( 'Have a nice day!' );
+		</script>
+		<p><strong>document.write - pre</strong></p>
+		<pre><script>
+            //write는 <pre>를 써도 안띄어짐
+			document.write( 'Hello World' );
+			document.write( 'Goodbye World' );
+		</script></pre>
+		<p><strong>document.writeln - pre</strong></p>
+		<pre><script>
+            //writeIn에 <pre>를 사용하면 줄바꿈이 됨.
+			document.writeln( 'Hello World' );
+			document.writeln( 'Have a nice day!' );
+		</script></pre>
+  </body>
+</html>
